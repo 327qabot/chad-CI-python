@@ -58,8 +58,8 @@ class BuyTicket(BaseCase):
     def buy_ticket(self):
         """ Add a ticket to be sold """
         self.open(base_url + '/')
-        self.click("#ticket-Avengers-buy")
-        self.click("#buy_submit")
+        self.click("#ticket-Avengers-buy", timeout=2)
+        self.click("#buy_submit", timeout=2)
 
     def test_buy_ticket(self):
       """ This test checks the implemented sell 
