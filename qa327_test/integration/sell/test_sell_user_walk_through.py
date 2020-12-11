@@ -42,7 +42,7 @@ class SellTicket(BaseCase):
       self.login()
       self.sell_ticket()
       self.open(base_url + "/")
-      self.assert_element("#ticket-Avengers", timeout=2))
+      self.assert_element("#ticket-Avengers", timeout=2)
       self.assert_text("Avengers", "#ticket-Avengers-name")
       self.assert_text("3", "#ticket-Avengers-quantity")
       self.assert_text("35", "#ticket-Avengers-price")
