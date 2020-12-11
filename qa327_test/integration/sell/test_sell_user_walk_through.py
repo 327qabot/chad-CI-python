@@ -32,7 +32,7 @@ class SellTicket(BaseCase):
         self.type("#sell_name", "Avengers")
         self.type("#sell_quantity", "3")
         self.type("#sell_price", "35")
-        self.type("#sell_exp_date", "2022\t12-20")
+        self.type("#sell_exp_date", "2022-12-20")
         self.click("#sell_submit")
 
     def test_sell_ticket(self):
